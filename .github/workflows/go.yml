@@ -90,7 +90,7 @@ jobs:
 
       - name: 'Test and Bench on ${{ matrix.arch }}'
         if: ${{ matrix.arch != 'x64' }}
-        uses: uraimo/run-on-arch-action@v3
+        uses: uraimo/run-on-arch-action@1e2c619f81e6d8609845ea1d2f443a778df1ac68 # v3
         with:
           arch: ${{ matrix.arch }}
           distro: ubuntu24.04
